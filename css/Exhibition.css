@@ -1,0 +1,224 @@
+.home_Exhibition,
+.serve_Exhibition,
+.about_Exhibition,
+.message_Exhibition,
+.commerce_Exhibition,
+.join_Exhibition,
+.contact_Exhibition {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: none;
+}
+
+nav a {
+    position: relative;
+}
+
+ol li {
+    list-style: none;
+}
+
+._parcel {
+    display: flex;
+    justify-content: space-around;
+}
+
+._parcel span a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+}
+
+._parcel ol li:hover {
+    color: #1357bf;
+}
+
+._parcel ol {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.more_text {
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    line-height: 40px;
+}
+
+.more {
+    position: relative;
+}
+
+.more:hover {
+    animation: moreColor .5s;
+    background: #959595;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid rgb(190, 189, 189);
+}
+
+@keyframes moreColor {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*切换按钮样式*/
+
+.button-next {
+    keft: 0;
+    height: 75px;
+    width: 90px;
+    background: url(../images/icon/button-next.png);
+    position: absolute;
+    text-align: center;
+    line-height: 75px;
+    top: 50%;
+    z-index: 3;
+    margin-top: -38px;
+}
+
+.button-prev {
+    right: 0;
+    height: 75px;
+    width: 90px;
+    background: url(../images/icon/buttom.png);
+    position: absolute;
+    text-align: center;
+    line-height: 75px;
+    top: 50%;
+    z-index: 3;
+    margin-top: -38px;
+}
+
+.button-prev:hover {
+    cursor: pointer;
+    background: url(../images/icon/buttom_active.png);
+}
+
+.button-next:hover {
+    cursor: pointer;
+    background: url(../images/icon/button-next_active.png);
+}
+
+i {
+    font-style: normal
+}
+
+.a span i:hover {
+    cursor: pointer;
+    display: inline-block;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.header_block {
+    box-shadow: 0 4px 5px Rgba(0, 0, 0, 0.1);
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+}
+
+.margin_none {
+    margin-bottom: 0;
+}
+
+
+/*查询*/
+
+.cinsult_bnt,
+.more_text {
+    transition: background .8s;
+}
+
+.cinsult_bnt:hover,
+.more_text:hover {
+    background: #fca136;
+    cursor: pointer;
+}
+
+.more_text:hover {
+    font-size: 16px;
+    color: #fff;
+    line-height: 38px;
+    border: 1px solid #fca136;
+    border-radius: 3px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 611630 */
+    src: url('//at.alicdn.com/t/font_611630_gftt36wwru7syvi.eot');
+    src: url('//at.alicdn.com/t/font_611630_gftt36wwru7syvi.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_611630_gftt36wwru7syvi.woff') format('woff'), url('//at.alicdn.com/t/font_611630_gftt36wwru7syvi.ttf') format('truetype'), url('//at.alicdn.com/t/font_611630_gftt36wwru7syvi.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_img {
+    position: relative;
+    height: 104px;
+    width: 104px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 105px;
+    transition-duration: 2s;
+    top: 0;
+}
+
+.icon_img .v_1 {
+    font-size: 45px;
+    transition-duration: .5s;
+    vertical-align: top;
+}
+
+.intro_parcel_item:hover .icon_img {
+    top: -45px;
+    border-color: #2869ca;
+    color: #2869ca;
+}
+
+.culture_parcel_item img {
+    animation: myda 1s infinite
+}
+
+
+/* @keyframes myda {
+    0% {
+        transform: scale(1.3)
+    }
+    50% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.3)
+    }
+} */
